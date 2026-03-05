@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+.card{
+    border: 2px solid black;
+    height: 500px;
+    width: 400px;
+    background-color:#a8edea;
+    border-radius: 30px;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.search-bar button{
+    border-radius: 50px;
+}
+input{
+    border-radius: 20px;
+    height: 40px;
+    width: 200px;
+    border: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.search{
+    height: 40px;
+    width: 40px;
+    /* border: 2px solid black; */
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+#demo{
+    display: none;
+}
+.weather-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    gap: 20px;
+}
+.lower-part{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.details img{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.details_1 img{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
