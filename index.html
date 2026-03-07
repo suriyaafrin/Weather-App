@@ -3,51 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="card">
-      <div class="search-bar">
-        <input type="text" placeholder="Enter a country name" />
-        <button><img
-          class="search"
-          src="data:image/webp;base64,UklGRqAGAABXRUJQVlA4IJQGAADQKQCdASoWAbQAPp1MoUylpCMiIxDZeLATiWlu4XHhG/Nj8K/2Ltz/yOQZAN/cvRl2I4CV5ump6HszVUYM2/Zjzg/nn+99g79deqt+4PsZfs2MgSWUXU4cTopBp9NKD9Vaj81YloVMM1jTEBe/STXWX/+UQLRKBXaP73+rnXyRFcdawAPCypGvu1jhVVsLrmvMJIMhCSmErjDcFsOsqq/sX4bEmeT97xKZqV3uEmOiMy7XHhZUpXa589EYZe8T/NdQpCS0C6ynXPYl7pVXKDIeM6FYf+6QktCo3HAXCm+kDnE9bhpjL1ijo+SfCYJVV/ZBzx5jAk+RvTK2pQrqfFwzpPskzV5pJV3YLN/O68NVX9kHjMLhQVuj7zxXZz+BEeTDeBtjiupcpWSRrW8AHhZVV/ULdF6knGtL/SMbEtCphmsqQcr0rU6qR86bIPJaFTDNZUg8loCAAP7+5760Sa2Rra97t8NICCZq1/m8h9WWPLPnoZCHhzQAOTtJDAQBpPDkv3pVSHJfK3b4SyNQSKbJn2nz+69yozAWyL83p6v4CmEMTRkmJvdpKe24+/obkmhVBTYsUrNphmGgqNuUzRSeCw8togzKN3aJOYUkmGpQUutRvPXVUOVEX8Zuz/kfqTrfHrWH1HeFdJCswplVb2/uTbtSdfHuJZ++JOqvcRgTcT76Ox+i9QvJvSsCgIfTEwa10M3/LFsB7uxxpFf4JHT2RWKjFFghRp3elmf3/l/oF453UCYpwnmGhpswmL2YfZo0+S1KJA4DDA8kUUBJOQgx/n5lgfs+4j8yxFtKzGe5VKcHomMiSSM3gLcDYhbmzhAjUNnqqdmNuYjO1o8HR3Jzn+InqgQGDmzjGL9yOJ794TmCSDc1d2Ct8MmXGt7pKl84kYDdc0s5oUx0B2QeeziKecDxZSvi5rlPUklWGxxvy19IidNVqpja1jEwJI5lMkZ9Hm1v+17yPHw96Gzu/iPgPEHKV5UE180ord9ll/+fNa+A+lRt523pIimrc0En3aWWyAd7KeG56oJ0LIkHo7QGXSJwpdzL2XRqFoaqQYF5wt+ehM77mtJwTEVtfLgd93lGCOg8gTHq1IbWojXnshm9N9ilsZ/VLXT89gopwL8AIRDatCD04+SdW3LHPMJ3f+HEtzQwrk0z5RmlIjYZSW2IO3yDpBuyNiXWyHTeD11jeUTF910v1q7huuopdkjxI78mxQtnVmbl5S2Maf9QVpEpxAL3X/ZEyPrettTRFHSTv5df75mS3paacGH/xFgP7KnAE+iyYpUmsQo/QLM5M3UmY3Z8BFpf3kId3TBc29GH/fLkK4kb4LecyLCzL69hJut/q1XVlU1+3y6laoCq5OL7AaA1/FbcDwn1GlQepL+UveBs7IU8dLGsWDd60u/nAbiLoufdHXNe1Oguuz0b0CFlYVZDPKB71J6T+pNrCpRrddp06/g/qw2PRs8fh5n83tEz9eWGLmEPXLIodwSqArbp+YLZMUCe69PPlVDGPjf8pSnsl1+q0gRlDWEHfeYGftRbFXGn7aDQIuV8SCXkV6g3sAfQIPh8BGXNGeC9bt2tzg4PugBG3fUiCz46xLT2HwheTut6SxjrjBxV2BR7KHxAIFqjZ9D/wA/80JZD6txnfMoZSu1NzEpr0L5ZkeD0gb49nspqzmkfuu7uofmqFUjJNhK7Tap2fGrmXuPhG3BOsPbc1/Its79Sbx882xshs9ppI66UmrobjHfpIZuiRREVn8BvRN0yzJ6/TzLuM2QpxNazK5azifrQkbNqMXDRVGrey61nBIS1L863VAc95B7H0XjEO9e5/aOhvJZ466yVtxMCs/6uAsDWu5pIOGw3GTZ2rrlXlSKJiYLjjvgjjGFDj3wST5ogi35XAWISMqF2MOopuAXXgoHN4o83G10jP53whuCPFkywPu1foauXLUDhu1ueTNHhPXYkf6Qdz7au30znNwn7U8HCCqt82X348U1siyAel44/5MpYx+YJ5Kyc1kE0bZDDfEpu7rcZQwF+KStfYVIHf/ugWmD7a3Obr/fLzsO7Zc5aF+wbfFWAoEaNGQR2c3YFbbpdyIwGND8pGs7/9c+F5UNKhIlQYhSgOCdt9GcSAq9wYpSrZx4pkeq1Yv7ktHMQcSRhCyxgkPemqUdrBcrJXkzamuQ4FDucttLnphMFm28373Zzr17gZcH0kcWOv2YVUguT1mKXHmwdLbZbnyMpF7TDyZO5Ls8wygwAAAAA"
-          alt="search-img" />
-        </button>
-      </div>
-      <!-- <p id="demo">Invalid Country Name</p> -->
-      <div class="weather-bar">
-        <img class="weather"
-          src="https://cdn-icons-png.flaticon.com/128/1163/1163661.png"
-          alt="weather-img"
-        />
-        <h2 class="temp">22°C</h2>
-        <h3 class="city">Germany</h3>
-      </div>
-     <div class="lower-part">
-         <div class="details">
+    <div class="logo">
+      <img src="logo.svg" />
+      <button class="units">
         <img
-          src="https://cdn-icons-png.flaticon.com/128/13944/13944027.png"
-          alt="humidity-img"
+          src="https://cdn-icons-png.flaticon.com/128/3980/3980962.png"
+          alt="set"
         />
-        <div class="humidity">
-          <p>50%</p>
-          <p class="humidity">Humidity</p>
-        </div>
-      </div>
-      <div class="details_1">
+        Units
         <img
-          src="https://cdn-icons-png.flaticon.com/128/11742/11742598.png"
-          alt="wind-img"
+          src="https://cdn-icons-png.flaticon.com/128/7996/7996254.png"
+          alt="drop"
         />
-        <div class="wind_speed">
-          <p>15 km/h</p>
-          <p>Wind Speed</p>
-        </div>
-      </div>
-     </div>
+      </button>
     </div>
-    <script src="app.js"></script>
+    <h1>How's the sky looking today?</h1>
+    <div class="search-bar">
+      <input class="sec" type="text" placeholder="🔍Search for a place....." />
+      <button class="sec_1">Search</button>
+    </div>
+    <div class="show1">
+      <div class="show">
+      <!-- <div class="images">
+            <img src="bg-today-small.svg" alt="image">
+        </div> -->
+      <div class="left-part">
+        <h4>Berlin,Germany</h4>
+        <p>Tuesday, Aug 5, 2025</p>
+      </div>
+      <div class="right-part">
+        <img class="weather_img"
+          src="https://cdn-icons-png.flaticon.com/128/869/869869.png"
+          alt="image"
+        />
+        <p><b><i>20°</i></b></p>
+      </div>
+    </div>
+    </div>
+    <div class="lower-part">
+        <div class="feels">
+          <p>Feels Like</p>
+          <br>
+          <p>18°</p>
+        </div>
+        <div class="humidity">
+          <p>Humidity</p>
+          <br>
+          <p>46%</p>
+        </div>
+        <div class="wind">
+          <p>Wind</p>
+          <br>
+          <p>14 km/h</p>
+        </div>
+        <div class="precipitation">
+          <p>Precipitation</p>
+          <br>
+          <p>0 mm</p>
+        </div>
+    </div>
+    <script src="appW.js"></script>
   </body>
 </html>
